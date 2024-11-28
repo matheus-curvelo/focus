@@ -1,0 +1,42 @@
+// Cores básicas
+$white: #FFFFFF;
+$black: #000000;
+
+// Cores primárias
+$green-check: #00F4BF;
+$blue-deep: #01080E;
+$blue-medium: #041832;
+$blue-royal: #144480;
+$violet: #8B1FF8;
+$lilac: #B872FF;
+$green-completed: #02CDA1;
+
+// Gradientes
+$gradient-buttons: linear-gradient(to bottom, #B872FF, #144480);
+$gradient-focus: linear-gradient(to bottom, #8B1FF8, #041832 48%, #01080E 100%);
+$gradient-short-break: linear-gradient(to bottom, #0F725C, #041832 48%, #01080E 100%);
+$gradient-long-break: linear-gradient(to bottom, #1875E9, #041832 48%, #01080E 100%);
+
+// Fundos
+$background-modal: #144480;
+$background-modal-2: #1B293B;
+$background-card-completed: #00F4BF;
+$background-card-timer: #144480;
+$background-card-timer-solid: #1B293B;
+
+// Breakpoints
+$xsMax: 575.98px;
+
+$smMin: 576px;
+$smMax: 767.98px;
+
+$mdMin: 768px;
+$mdMax: 991.98px;
+
+$lgMin: 992px;
+$lgMax: 1199.98px;
+
+$xlMin: 1200px;
+$xlMax: 1399.98px;
+
+$xxlMin: 1400px;
