@@ -1,0 +1,53 @@
+@import '../../styles/variables.scss';
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 32px;
+    font-weight: bold;
+    cursor: pointer;
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    @media (max-width: $smMax) {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.875rem;
+    }
+
+    @media (max-width: $xsMax) {
+        padding: 0.5rem 0.625rem;
+        font-size: 0.75rem;
+    }
+}
+
+.button-delete,
+.button-cancel {
+    background: none;
+    color: $black;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+
+
+.button-keep {
+    background: $black;
+    color: $white;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: $white;
+        color: $black;
+    }
+}
