@@ -1,7 +1,3 @@
 @import './styles/typography';
 @import './styles/variables';
-
-body {
-  margin: 0;
-  font-family: "Unbounded", sans-serif;
-}
+@import './styles/global';
