@@ -1,0 +1,50 @@
+@import '../../styles/variables.scss';
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 32px;
+    font-weight: bold;
+    cursor: pointer;
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    @media (max-width: $smMax) {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    @media (max-width: $xsMax) {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.75rem;
+    }
+}
+
+.button-play,
+.button-pause,
+.button-save {
+    background: $gradient-buttons;
+    color: $white;
+
+    &:hover {
+        background: $gradient-focus;
+    }
+
+    @media (max-width: $smMax) {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.95rem;
+    }
+
+    @media (max-width: $xsMax) {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+}
