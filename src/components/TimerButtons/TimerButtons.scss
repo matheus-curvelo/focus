@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+.timer-button {
+    background: transparent;
+    color: $white;
+    border: none;
+    padding: 0.5rem 0.625rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &.active {
+        background: $blue-royal;
+    }
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    &:hover {
+        border-color: $white;
+        background: rgba($color: $blue-royal, $alpha: 0.5);
+        color: $white;
+    }
+
+    @media (max-width: $smMax) {
+        padding: 0.5rem;
+        font-size: 0.95rem;
+        gap: 6px;
+    }
+
+    @media (max-width: $xsMax) {
+        padding: 0.375rem;
+        font-size: 0.85rem;
+        gap: 4px;
+    }
+}
