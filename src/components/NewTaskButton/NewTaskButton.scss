@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+.new-task-button {
+    background: transparent;
+    color: $lilac;
+    border: 2px solid $lilac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 1.125rem 11.125rem;
+    font-size: 1rem;
+    border-radius: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    &:hover {
+        border-color: $white;
+        color: $white;
+    }
+
+    @media (max-width: $smMax) {
+        padding: 0.625rem 2.5rem;
+        font-size: 0.95rem;
+        gap: 6px;
+    }
+
+    @media (max-width: $xsMax) {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        gap: 4px;
+    }
+}
