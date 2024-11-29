@@ -12,7 +12,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({icon, label, className}) => {
   return (
-    <button className={`button ${className}`} type="button" aria-label={label}>
+    <button className={`task-button ${className}`} type="button" aria-label={label}>
       {icon}
       {label}
     </button>

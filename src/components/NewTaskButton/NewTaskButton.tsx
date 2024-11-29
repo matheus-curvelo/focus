@@ -5,7 +5,7 @@ import "./NewTaskButton.scss";
 const NewTaskButton: React.FC = () => {
   return (
     <button
-      className="button new-task-button"
+      className="new-task-button"
       type="button"
       aria-label="New Task">
       <AddIcon />
