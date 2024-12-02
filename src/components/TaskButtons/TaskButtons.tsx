@@ -32,5 +32,5 @@ export const ButtonCancel: React.FC = () => {
 };
 
 export const ButtonKeep: React.FC = () => {
-  return <Button icon={<KeepButton />} label="Keep" className="button-keep" />;
+  return <Button icon={<KeepButton />} label="Salvar" className="button-keep" />;
 };
