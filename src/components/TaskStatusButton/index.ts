@@ -1,1 +1,1 @@
-export {default as TimerButtons} from "./TaskStatusButton";
+export {default as TaskStatusButton} from "./TaskStatusButton";
