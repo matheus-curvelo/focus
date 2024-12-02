@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+
+.switch-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.switch-button {
+    width: 60px;
+    height: 32px;
+    background: $background-modal-2;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+
+    &:has(.on) {
+        background: $lilac;
+    }
+}
+
+.switch-knob {
+    width: 24px;
+    height: 24px;
+    background: $white;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+
+    &.on {
+        transform: translateX(32px);
+    }
+
+    &.off {
+        transform: translateX(4px);
+    }
+}
+
+.switch-label {
+    font-size: 1rem;
+    color: $white;
+    user-select: none;
+}
