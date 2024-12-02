@@ -1,0 +1,82 @@
+@import '../../styles/variables.scss';
+
+.task-status-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+    @media (max-width: $mdMax) {
+        font-size: .875rem;
+        padding: 12px;
+    }
+
+    @media (max-width: $xsMax) {
+        font-size: .75rem;
+        padding: 8px;
+    }
+
+    &.completed {
+        background-color: $background-card-completed;
+        color: $black;
+
+        .icon-circle {
+            background-color: $green-check;
+        }
+    }
+
+    &.pending {
+        background-color: $background-card-pending;
+        color: $black;
+
+        .icon-circle {
+            background-color: $white;
+        }
+    }
+
+    .icon-circle {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .task-text {
+        flex-grow: 1;
+    }
+
+    .edit-circle {
+        width: 32px;
+        height: 32px;
+        border: 2px solid $black;
+        background: transparent;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+
+        svg {
+            width: 16px;
+            height: 16px;
+            transition: all 0.3s ease;
+        }
+
+        &:hover {
+            border-color: $blue-royal;
+
+            svg {
+                color: $blue-royal;
+            }
+        }
+    }
+}
