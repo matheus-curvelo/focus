@@ -24,7 +24,12 @@
         padding: 1rem;
         color: $black;
         resize: none;
+        font-size: 1rem;
         font-weight: 300;
+
+        @media (max-width: $mdMax) {
+            font-size: .875rem;
+        }
 
         &::placeholder {
             color: $grey;
@@ -104,11 +109,6 @@
         svg {
             width: 24px;
             height: 24px;
-
-            @media (max-width: $mdMax) {
-                width: 20px;
-                height: 20px;
-            }
         }
     }
 }
