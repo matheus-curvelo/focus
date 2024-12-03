@@ -1,11 +1,7 @@
 import React, {useState} from "react";
 import "./SwitchButton.scss";
 
-interface SwitchButtonProps {
-  label: string; // Texto opcional ao lado do botão
-}
-
-const SwitchButton: React.FC<SwitchButtonProps> = ({label}) => {
+const SwitchButton: React.FC = () => {
   const [isOn, setIsOn] = useState(false);
 
   const toggleSwitch = () => {
@@ -17,7 +13,7 @@ const SwitchButton: React.FC<SwitchButtonProps> = ({label}) => {
       <div className="switch-button" onClick={toggleSwitch}>
         <div className={`switch-knob ${isOn ? "on" : "off"}`} />
       </div>
-      {label && <span className="switch-label">{label}</span>}
+      <span className="switch-label">Música</span>
     </div>
   );
 };
